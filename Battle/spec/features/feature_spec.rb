@@ -7,7 +7,7 @@ describe Battle do
   end
 
   it 'outputs message to homepage' do
-    visit '/'
+    visit('/')
 
     expect(page).to have_text('Testing infrastructure working!')
   end

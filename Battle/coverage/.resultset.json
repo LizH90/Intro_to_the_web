@@ -1,10 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/stephengeller/Projects/makers-academy/week-three/day-2/Intro_to_the_web/Battle/spec/features/feature_spec.rb": [
+      "/Users/lizziehard/challenges/week_3/Intro_to_the_web/Battle/spec/features/feature_spec.rb": [
         1,
         null,
         1,
+        null,
+        1,
+        1,
+        null,
         null,
         1,
         1,
@@ -12,13 +16,11 @@
         0,
         null,
         null,
-        1,
-        1,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1502808985
+    "timestamp": 1502810363
   }
 }
