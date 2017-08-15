@@ -5,12 +5,13 @@ get '/random-meme' do
   erb(:index)
 end
 
-get '/named-meme' do
+post '/named-meme' do
   p @name = params[:name]
   @name = params[:name]
   erb(:index)
 end
 
-get '/' do
-  "BLAH"
+get '/meme-naming' do
+  @name = params[:name]
+  erb(:index)
 end

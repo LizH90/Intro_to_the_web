@@ -2,14 +2,11 @@
 
 <img src="http://www.wapppictures.com/wp-content/uploads/2015/12/290983-sheldon-cooper-in-the-big-bang-theory-min.jpg" style="border: 2px dashed red">
 
-<form action="/named-meme">
+<form action="/named-meme" method="post">
 
+  <% if @name.nil? || @name.empty? %>
   <input type="text" name="name">
   <input type="submit" value="Submit">
-
-
-
-
-
+  <%end %>
 
 </form>
