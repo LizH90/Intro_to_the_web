@@ -1,16 +1,11 @@
 ENV['RACK_ENV'] = 'test'
 
-
+require_relative './../app.rb'
 require 'capybara/rspec'
 require 'capybara'
 require 'rspec'
-require 'selenium-webdriver'
 require 'simplecov'
 require 'simplecov-console'
-require File.join(File.dirname(__FILE__), '..', 'app.rb')
-
-include Capybara::DSL
-Capybara.default_driver = :selenium
 
 Capybara.app = Battle
 
