@@ -17,7 +17,10 @@ class Battle < Sinatra::Base
   get '/play' do
     @name1 = session['name1']
     @name2 = session['name2']
+    @hp1 = 100
+    @hp2 = 100
     erb(:play)
+
   end
 
   run! if app_file == $0
