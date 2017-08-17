@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/lizziehard/challenges/week_3/Intro_to_the_web/Battle/spec/features/feature_spec.rb": [
+      "/Users/main/makers/week3/day4/Intro_to_the_web/Battle/spec/features/feature_spec.rb": [
         1,
         null,
         1,
@@ -10,6 +10,7 @@
         1,
         null,
         null,
+        1,
         1,
         1,
         1,
@@ -19,6 +20,6 @@
         null
       ]
     },
-    "timestamp": 1502978077
+    "timestamp": 1502980567
   }
 }

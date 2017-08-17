@@ -8,8 +8,9 @@ feature 'Testing infrastructure' do
 
   scenario "expects players to fill in their names and submit the form" do
     visit('/')
-    fill_in('player_1', with: 'Lizzie')
+    fill_in('name1', with: 'Lizzie')
+    fill_in('name2', with: 'David')
     click_button('Submit')
-    expect(page).to have_text "Lizzie"
+    expect(page).to have_text "Lizzie vs David"
   end
 end
