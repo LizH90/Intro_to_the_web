@@ -8,8 +8,8 @@ feature 'Testing infrastructure' do
 
   scenario "expects players to fill in their names and submit the form" do
     visit('/')
-    fill_in('First Name', with: 'Lizzie')
+    fill_in('player_1', with: 'Lizzie')
     click_button('Submit')
-    expect(params[:First_name]).to eq 'Lizzie'
+    expect(page).to have_text "Lizzie"
   end
 end
