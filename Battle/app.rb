@@ -1,6 +1,7 @@
 require 'sinatra'
-
 class Battle < Sinatra::Base
+
+  enable :sessions
 
   get '/' do
     erb(:index)
@@ -8,8 +9,14 @@ class Battle < Sinatra::Base
 
   post '/names' do
     p params
-    @name1 = params[:name1]
-    @name2 = params[:name2]
+    session['name1'] = params[:name1]
+    session['name2'] = params[:name2]
+    redirect '/play'
+  end
+
+  get '/play' do
+    @name1 = session['name1']
+    @name2 = session['name2']
     erb(:play)
   end
 
