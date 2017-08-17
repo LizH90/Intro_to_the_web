@@ -13,4 +13,12 @@ feature 'Testing infrastructure' do
     click_button('Submit')
     expect(page).to have_text "Lizzie vs David"
   end
+
+  scenario "expect session to store names" do
+    visit('/')
+    fill_in('name1', with: 'Lizzie')
+    fill_in('name2', with: 'David')
+    click_button('Submit')
+    assert_current_path('/play')
+  end
 end
