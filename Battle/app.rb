@@ -17,12 +17,11 @@ class Battle < Sinatra::Base
   end
 
   get '/play' do
-    @hp1 = 100
-    @hp2 = 100
     erb(:play)
   end
 
   post '/attack' do
+    $name1.attack($name2)
     erb(:attack)
   end
 
