@@ -1,6 +1,15 @@
 <h1><%= $game.player1.name %> vs <%= $game.player2.name %>  </h1>
-<h2> hp: <%= $game.player1.hp %> hp: <%= $game.player2.hp %> </h2>
-<form action='/attack' method='post'>
-  <!-- <button type='submit'>Attack Player 1</button> -->
-  <button type='submit'>Attack Player 2</button>
+<h2><%= $game.player1.hp %>HP <%= $game.player2.hp %>HP </h2>
+
+<form action='/play' method='post'>
+  <button type='submit'>Attack <%= $game.player1.name %></button>
 </form>
+
+<form action='/play2' method='post'>
+  <button type='submit'>Attack <%= $game.player2.name %></button>
+</form>
+
+<h2><%= $game.turn.name%>'s turn</h2>
+
+
+  <!-- <button type='submit'>Attack Player 1</button> -->

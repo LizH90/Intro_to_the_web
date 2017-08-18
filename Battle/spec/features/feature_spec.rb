@@ -20,12 +20,12 @@ feature 'Testing infrastructure' do
 
   scenario 'expects to see player 2\'s hit points' do
     sign_in_and_play
-    expect(page).to have_content 'hp: 100'
+    expect(page).to have_content '100HP'
   end
 
-  scenario 'confirmation you have attacked' do
+  scenario 'switch turns' do
     sign_in_and_play
-    click_button('Attack Player 2')
-    expect(page).to have_content 'You have attacked David'
+    click_button('Attack David')
+    expect(page).to have_content "David's turn"
   end
 end
