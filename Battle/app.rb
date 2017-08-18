@@ -20,7 +20,10 @@ class Battle < Sinatra::Base
     @hp1 = 100
     @hp2 = 100
     erb(:play)
+  end
 
+  post '/attack' do
+    erb(:attack)
   end
 
   run! if app_file == $0
