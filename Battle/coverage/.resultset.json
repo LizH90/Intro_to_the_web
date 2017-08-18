@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/elizabethchan/Desktop/Makers Academy/week3/Intro_to_the_web/Battle/spec/features/feature_spec.rb": [
+      "/Users/lizziehard/challenges/week_3/Intro_to_the_web/Battle/spec/features/feature_spec.rb": [
         1,
         1,
         null,
@@ -34,7 +34,7 @@
         null,
         null
       ],
-      "/Users/elizabethchan/Desktop/Makers Academy/week3/Intro_to_the_web/Battle/spec/player_spec.rb": [
+      "/Users/lizziehard/challenges/week_3/Intro_to_the_web/Battle/spec/player_spec.rb": [
         1,
         null,
         1,
@@ -44,17 +44,8 @@
         1,
         null,
         null
-      ],
-      "/Users/elizabethchan/Desktop/Makers Academy/week3/Intro_to_the_web/Battle/lib/player.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
       ]
     },
-    "timestamp": 1503057772
+    "timestamp": 1503063501
   }
 }
