@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/lizziehard/challenges/week_3/Intro_to_the_web/Battle/spec/features/feature_spec.rb": [
+      "/Users/elizabethchan/Desktop/Makers Academy/week3/Intro_to_the_web/Battle/spec/features/feature_spec.rb": [
         1,
         1,
         null,
@@ -35,6 +35,6 @@
         null
       ]
     },
-    "timestamp": 1503055970
+    "timestamp": 1503057201
   }
 }

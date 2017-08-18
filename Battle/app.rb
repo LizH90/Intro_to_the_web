@@ -23,6 +23,7 @@ class Battle < Sinatra::Base
   end
 
   post '/attack' do
+    @name2 = session['name2']
     erb(:attack)
   end
 

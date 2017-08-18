@@ -25,7 +25,7 @@ feature 'Testing infrastructure' do
 
   scenario 'confirmation you have attacked' do
     sign_in_and_play
-    click_button('Attack Lizzie')
-    expect(page).to have content 'You have attacked Lizzie'
+    click_button('Attack Player 2')
+    expect(page).to have_content 'You have attacked David'
   end
 end
