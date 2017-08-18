@@ -23,15 +23,18 @@ class Battle < Sinatra::Base
   end
 
   post '/play' do
-    $game.attack($game.player1)
     $game.switch
     erb(:play)
   end
 
-  post '/play2' do
+  post '/attack1' do
+    $game.attack($game.player1)
+    erb(:attack)
+  end
+
+  post '/attack2' do
     $game.attack($game.player2)
-    $game.switch
-    erb(:play)
+    erb(:attack2)
   end
 
   run! if app_file == $0

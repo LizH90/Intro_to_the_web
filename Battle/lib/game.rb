@@ -20,5 +20,7 @@ class Game
     @turn == player1
   end
 
+  
+
 
 end

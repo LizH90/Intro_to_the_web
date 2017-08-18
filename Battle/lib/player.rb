@@ -14,4 +14,8 @@ class Player
     @hp -= 10
   end
 
+  def dummy
+    "#{@name} has been attacked"
+  end
+
 end
